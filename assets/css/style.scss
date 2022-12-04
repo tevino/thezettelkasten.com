@@ -2,6 +2,10 @@
 ---
 
 @import "{{ site.theme }}";
+.gumroad .cart-button {
+    display: none !important;
+}
+
 .page-header {
     background: no-repeat center/100% url("{{ '/assets/images/cover.png?v=' | append: site.github.build_revision | relative_url }}");
     color: black;

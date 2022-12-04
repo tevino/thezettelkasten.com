@@ -1,0 +1,82 @@
+---
+---
+
+@import "{{ site.theme }}";
+.page-header {
+    background: no-repeat center/100% url("{{ '/assets/images/cover.png?v=' | append: site.github.build_revision | relative_url }}");
+    color: black;
+    border-bottom: 1px solid $border-color;
+}
+
+.page-header * {
+    color: black;
+}
+
+.m-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.m-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    margin: 10px !important;
+}
+
+.m-article-card__picture {
+    position: relative;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-color: $header-bg-color-secondary;
+    overflow: hidden;
+}
+
+.m-article-card__picture-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.m-card-text {
+    padding: 10px;
+}
+
+.m-yes {
+    background: center / contain no-repeat url("{{ '/assets/images/yes.png?v=' | append: site.github.build_revision | relative_url }}"), var(--background-color);
+}
+
+.m-no {
+    background: center / contain no-repeat url("{{ '/assets/images/no.png?v=' | append: site.github.build_revision | relative_url }}"), var(--background-color);
+}
+
+.m-card-50 {
+    width: 580px;
+}
+
+.m-card-33 {
+    width: 380px;
+}
+
+.m-hero__picture {
+    opacity: 1 !important;
+}
+
+.m-hero-title {
+    color: black !important;
+}
+
+.m-hero__content {
+    color: black !important;
+}

@@ -1,7 +1,20 @@
 ---
 ---
 
+// Headers
+$header-heading-color: #fff !default;
+$header-bg-color: #84a98c !default;
+$header-bg-color-secondary: #354f52 !default;
+
+// Text
+$section-headings-color: #84a98c !default;
+$body-text-color: #354f52 !default;
+$body-link-color: #354f52 !default;
+$blockquote-text-color: #2f3e46 !default;
+
+
 @import "{{ site.theme }}";
+
 .gumroad .cart-button {
     display: none !important;
 }
@@ -12,9 +25,13 @@
     border-bottom: 1px solid $border-color;
 }
 
-.page-header * {
-    color: black;
-}
+@media only screen and (max-width: 1440px) {
+    .page-header {
+        background-color: $header-bg-color;
+        background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+        color: $header-heading-color;
+    }
+ }
 
 .m-card-container {
     width: 100%;

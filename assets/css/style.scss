@@ -19,6 +19,16 @@ $blockquote-text-color: #2f3e46 !default;
     display: none !important;
 }
 
+.clean-list li {
+    list-style: none;
+}
+.yes {
+    color: #79df8f;
+}
+.no {
+    color: #f761a9
+}
+
 .page-header {
     background: no-repeat center/100% url("{{ '/assets/images/cover.png?v=' | append: site.github.build_revision | relative_url }}");
     color: black;
